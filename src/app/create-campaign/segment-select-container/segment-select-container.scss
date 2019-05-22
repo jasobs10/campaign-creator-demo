@@ -22,9 +22,12 @@
       height: 15px;
       width: 15px;
       border: 1px solid #979797;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      &.selected {
-        background-color: #04AAB4;
+      img {
+        width: 80%;
       }
     }
 
