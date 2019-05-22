@@ -155,11 +155,20 @@
 
       .month-controls {
         display: flex;
-        width: 330px;
-        justify-content: space-between;
+        width: 400px;
 
         label {
-          width: 33%;
+          width: 45%;
+          margin-right: 40px;
+
+          &:last-child {
+            margin-right: 12px;
+          }
+        }
+
+        .month-picker {
+          width: 100%;
+          cursor: pointer;
         }
       }
 

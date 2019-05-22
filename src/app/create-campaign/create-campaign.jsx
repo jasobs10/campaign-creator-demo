@@ -127,7 +127,7 @@ class CreateCampaign extends React.Component {
               <label>
                 Start month
                 {this.state.showStartPicker ? <MonthPicker selectedDate={this.state.startMonth} handleSelect={this.updateStartMonth} close={this.closeMonthPicker}/> : null}
-                <input className="month-picker" type="text" onClick={(e) => this.openMonthPicker('start')} value={this.state.startMonth} readOnly={true} />
+                <input className="month-picker first" type="text" onClick={(e) => this.openMonthPicker('start')} value={this.state.startMonth} readOnly={true} />
               </label>
 
               <label>
