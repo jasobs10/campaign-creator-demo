@@ -280,7 +280,7 @@ class CreateCampaign extends React.Component {
 
         <div className="campaign-footer">
           <div className="left">
-            <span class="text">back to campaigns</span>
+            <span className="text">back to campaigns</span>
           </div>
           <div className="right">
             <button className="cancel" onClick={this.resetForm}>Cancel</button>
