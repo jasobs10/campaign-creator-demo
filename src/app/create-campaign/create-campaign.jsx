@@ -37,11 +37,28 @@ class CreateCampaign extends React.Component {
     this.closeMonthPicker = this.closeMonthPicker.bind(this);
     this.updateStartMonth = this.updateStartMonth.bind(this);
     this.updateEndMonth = this.updateEndMonth.bind(this);
+    this.resetForm = this.resetForm.bind(this);
   }
 
   // make cancel reset everything
-  resetState() {
-    
+  resetForm() {
+    this.setState({
+      name: '',
+      startMonth: '',
+      endMonth: '',
+      budget: '',
+      landingPage: '',
+      zipCode: '',
+      segments: [
+        { name: 'Retirement Planning', selected: false },
+        { name: 'Divorce', selected: false },
+        { name: '401k', selected: false },
+        { name: 'Charity', selected: false }
+      ],
+      showSegmentSelect: false,
+      showStartPicker: false,
+      showEndPicker: false
+    });
   }
 
   toggleSegmentSelect(e) {
@@ -108,7 +125,7 @@ class CreateCampaign extends React.Component {
           <div className="campaign-container">
             <header className="text">
               <h1>Create Campaign</h1>
-              <span>Cancel</span>
+              <span onClick={this.resetForm}>Cancel</span>
             </header>
 
             <section>
@@ -266,8 +283,8 @@ class CreateCampaign extends React.Component {
             <span class="text">back to campaigns</span>
           </div>
           <div className="right">
-            <button className="cancel">Cancel</button>
-            <button className="save">Save Campaign</button>
+            <button className="cancel" onClick={this.resetForm}>Cancel</button>
+            <button className="save" onClick={this.resetForm}>Save Campaign</button>
           </div>
         </div>        
       </div>

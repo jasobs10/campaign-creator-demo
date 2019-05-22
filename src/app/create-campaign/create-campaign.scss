@@ -253,6 +253,9 @@
 }
 
 .campaign-footer {
+  // can remove stickyness of this footer
+  position: sticky;
+  bottom: 0vh;
   width: 100%;
   background: white;
   height: 94px;
