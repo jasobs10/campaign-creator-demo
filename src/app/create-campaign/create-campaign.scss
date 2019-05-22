@@ -251,3 +251,45 @@
 
   }
 }
+
+.campaign-footer {
+  width: 100%;
+  background: white;
+  height: 94px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 188px;
+  margin-top: 30px;
+
+  .left {
+    .text {
+      font-weight: bold;
+      color: #ACACAC;
+      cursor: pointer;
+      font-size: 21px;
+    }
+  }
+
+  .right {
+    display: flex;
+
+    button {
+      padding: 15px 28px;
+      font-size: 21px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 8px;
+    }
+    .cancel {
+      color: #B7B7B7;
+      margin-right: 20px;
+    }
+
+    .save {
+      color: #fff;
+      background-color: #04AAB4;
+    }
+  }
+}
